@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+span, a, p {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 7em;
+  color: #ffffff;
+}
+
+.title p {
+  text-align: center;
+  font-size: 1.5em;
+  color: #44695a;
+}
+
+section.intro {
+  background-color: #74b49b;
+  position: relative;
+  display: block;
+  padding-top: 100px;
+}
+
+.intro-bottom {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+svg.mountain {
+  width: 100%;
+  fill: #44695a;
+}
+
+@-webkit-keyframes slide1 {
+  0%{
+      right:30%;
+  }
+  50%{
+      right:15%;
+  }
+  100%{
+      right:30%;
+  }
+}
+
+@-webkit-keyframes slide2 {
+  0%{
+      left:30%;
+  }
+  50%{
+      left:45%;
+  }
+  100%{
+      left:30%;
+  }
+}
+
+svg.cloud1 {
+  position: absolute;
+  right: 30em;
+  width: 270px;
+  fill: #ffffff;
+  -webkit-animation: slide1 45s linear infinite;
+}
+
+svg.cloud2 {
+  position: absolute;
+  left: 30em;
+  margin-top: -35px;
+  width: 350px;
+  fill: #ffffff;
+  -webkit-animation: slide2 45s linear infinite;
+}
+
+.title {
+  padding: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+}
