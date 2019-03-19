@@ -121,6 +121,7 @@ span, a, p {
 
 section.intro {
   background-color: #74b49b;
+	background-image: url('../images/groovepaper.png');
   position: relative;
   display: block;
   padding-top: 100px;
