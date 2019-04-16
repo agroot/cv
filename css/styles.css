@@ -121,11 +121,27 @@ span, a, p {
 
 section.intro {
   background-color: #74b49b;
-	background-image: url('../images/groovepaper.png');
+  background-image: url('../images/groovepaper.png');
   position: relative;
   display: block;
   padding-top: 100px;
   padding-bottom: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0);
+}
+
+section.intro::after {
+    -webkit-clip-path: polygon(100% 79%, 100% 80%, 0 100%, 0 99%);
+    clip-path: polygon(100% 89%, 100% 90%, 0 100%, 0 99%);
+    background: rgba(255, 255, 255, 0.25);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: block;
+    z-index: 9;
 }
 
 section {
